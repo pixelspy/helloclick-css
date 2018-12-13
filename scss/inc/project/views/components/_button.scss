@@ -1,0 +1,47 @@
+.btn {
+  border: 1px solid $grey-dark;
+  color: $white;
+  text-align: center;
+  cursor: pointer;
+  background-color: $grey;
+
+  &:hover {
+    background-color: $grey-dark;
+    color: $white;
+  }
+
+  &__squared {
+    border-radius: 3px;
+  }
+  &__rounded {
+    border-radius: 20px;
+  }
+
+  &__small {
+    font-size: $size-small;
+    padding: $size-extra-small $size-medium;
+  }
+  &__medium {
+    font-size: $size-medium;
+    padding: $size-extra-small $size-large;
+  }
+  &__large {
+    font-size: $size-large;
+    padding: $size-extra-small $size-extra-large;
+  }
+
+  &--success {
+    background-color: $green;
+    color: $white;
+    &:hover {
+      background-color: $green-dark;
+    }
+  }
+  &--danger {
+    background-color: $red;
+    color: $white;
+    &:hover {
+      background-color: $red-dark;
+    }
+  }
+}

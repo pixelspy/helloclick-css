@@ -1,0 +1,23 @@
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    /* desktop (< #{$breakpoints-desktop}) */
+    @media (max-width: $breakpoints-desktop) { @content ; }
+  }
+  @else if $point == laptop {
+    /* laptop (< #{$breakpoints-laptop}) */
+    @media (max-width: $breakpoints-laptop) { @content ; }
+  }
+  @else if $point == tablet {
+    /* tablet (< #{$breakpoints-tablet}) */
+    @media (max-width: $breakpoints-tablet)  { @content ; }
+  }
+  @else if $point == mobile {
+    /* mobile (< #{$breakpoints-mobile}) */
+    @media (max-width: $breakpoints-mobile)  { @content ; }
+  }
+  @else if $point == tv {
+    /* tv (> #{$breakpoints-desktop}) */
+    @media (min-width: $breakpoints-mobile)  { @content ; }
+  }
+}

@@ -1,0 +1,100 @@
+/* Grid */
+
+// mixins
+@mixin isGeneratorAll($size) {
+  .is-#{$size},
+  .is-#{$size}-desktop,
+  .is-#{$size}-laptop,
+  .is-#{$size}-tablet,
+  .is-#{$size}-mobile {
+    flex-basis: calc(100% / (12 / #{$size}));
+  }
+}
+@mixin isGeneratorDesktop($size) {
+  .is-#{$size}-desktop,
+  .is-#{$size}-laptop,
+  .is-#{$size}-tablet,
+  .is-#{$size}-mobile {
+    flex-basis: calc(100% / (12 / #{$size}));
+  }
+}
+@mixin isGeneratorLaptop($size) {
+  .is-#{$size}-laptop,
+  .is-#{$size}-tablet,
+  .is-#{$size}-mobile {
+    flex-basis: calc(100% / (12 / #{$size}));
+  }
+}
+@mixin isGeneratorTablet($size) {
+  .is-#{$size}-tablet,
+  .is-#{$size}-mobile {
+    flex-basis: calc(100% / (12 / #{$size}));
+  }
+}
+@mixin isGeneratorMobile($size) {
+  .is-#{$size}-mobile {
+    flex-basis: calc(100% / (12 / #{$size}));
+  }
+}
+
+// css
+
+.container {
+  max-width: $size-container;
+  margin: auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: stretch;
+  margin: -$grid-gutter;
+}
+
+.is {
+  padding: $grid-gutter;
+}
+
+
+// It may be a bit too much..
+$i: 12;
+@while $i >= 1 {
+  @include isGeneratorAll($i);
+  $i: $i - 1;
+}
+
+@include breakpoint(desktop) {
+  $i: 12;
+  @while $i >= 1 {
+    @include isGeneratorDesktop($i);
+    $i: $i - 1;
+  }
+}
+
+@include breakpoint(laptop) {
+  $i: 12;
+  @while $i >= 1 {
+    @include isGeneratorLaptop($i);
+    $i: $i - 1;
+  }
+}
+
+@include breakpoint(tablet) {
+  $i: 12;
+  @while $i >= 1 {
+    @include isGeneratorTablet($i);
+    $i: $i - 1;
+  }
+}
+
+@include breakpoint(mobile) {
+  $i: 12;
+  @while $i >= 1 {
+    @include isGeneratorMobile($i);
+    $i: $i - 1;
+  }
+  .hide-mobile{
+    display: none;
+  }
+}

@@ -1,0 +1,13 @@
+// Colors
+$white: #fff;
+$black: #000;
+
+$grey: rgb(122, 122, 122);
+$grey-light: lighten($grey, 20%);
+$grey-dark: darken($grey, 20%);
+
+$green: rgb(0,128,0);
+$green-dark: darken($green, 20%);
+
+$red: rgb(255,0,0);
+$red-dark: darken($red, 20%);

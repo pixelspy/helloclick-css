@@ -1,0 +1,14 @@
+{
+  "name": "helloclick-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scss/style.scss",
+  "scripts": {
+    "watch": "node-sass --output-style expanded --source-map true --watch scss -o dist/"
+  },
+  "author": "olivia py-cz, ninobysa, pixelspy",
+  "license": "GPLv3",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}
