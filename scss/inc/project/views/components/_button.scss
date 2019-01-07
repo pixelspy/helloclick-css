@@ -1,47 +1,44 @@
 .btn {
-  border: 1px solid $grey-dark;
-  color: $white;
-  text-align: center;
-  cursor: pointer;
-  background-color: $grey;
+	padding: 0 20px;
+	border: none;
+	color: $white;
+	text-align: center;
+	cursor: pointer;
+	background-color: $grey3;
+	border-radius: 2px;
+	height: 33px;
+	font-size: 18px;
+	font-weight: 500;
+	transition: background-color .1s ease-in-out;
 
-  &:hover {
-    background-color: $grey-dark;
-    color: $white;
-  }
+	&:hover {
+		background-color: $grey2;
+	}
 
-  &__squared {
-    border-radius: 3px;
-  }
-  &__rounded {
-    border-radius: 20px;
-  }
-
-  &__small {
-    font-size: $size-small;
-    padding: $size-extra-small $size-medium;
-  }
-  &__medium {
-    font-size: $size-medium;
-    padding: $size-extra-small $size-large;
-  }
-  &__large {
-    font-size: $size-large;
-    padding: $size-extra-small $size-extra-large;
-  }
-
-  &--success {
-    background-color: $green;
-    color: $white;
-    &:hover {
-      background-color: $green-dark;
-    }
-  }
-  &--danger {
-    background-color: $red;
-    color: $white;
-    &:hover {
-      background-color: $red-dark;
-    }
-  }
+	// The hovers seems non-consistent
+	&--success {
+		background-color: $green;
+		&:hover {
+			background-color: $darkGreen;
+		}
+	}
+	&--danger {
+		background-color: $red;
+		&:hover {
+			background-color: $darkRed;
+		}
+	}
+	&--primary {
+		background-color: $blue;
+		&:hover {
+			background-color: $darkBlue;
+		}
+	}
+	&:disabled{
+		cursor: default;
+		background-color: $grey3;
+		&:hover {
+			background-color: $grey3;
+		}
+	}
 }

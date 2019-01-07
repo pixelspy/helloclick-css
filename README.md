@@ -30,11 +30,13 @@ Put the general style of your project in `_general.scss` and create new files fo
 Components used all around your project, like a CTA style
 
 
-### `/tests`
+### `/docs`
 Preview
 
 ## License & credit 📝
 ### License
 ?
 ### Credit
-Use of [oliviapycz/GoldenRule](https://github.com/oliviapycz/GoldenRule) as a kickstarter/inspiration
+Use of [oliviapycz/GoldenRule](https://github.com/oliviapycz/GoldenRule) as a kickstarter/inspiration.  
+Use of [cbracco/html5-test-page](http://github.com/cbracco/html5-test-page) for the elements page.
+Use of Roboto font licensed under Apache License Version 2.0 by Google

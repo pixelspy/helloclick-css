@@ -357,6 +357,14 @@ html {
   }
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"), local("Roboto-Regular"), url("../../../assets/fonts//roboto-v18-latin-regular.woff2") format("woff2"), url("../../../assets/fonts/roboto-v18-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 .card {
   box-shadow: 0 2px 3px grey;
   padding: 1rem;
@@ -377,64 +385,60 @@ html {
 }
 
 .btn {
-  border: 1px solid #474747;
+  padding: 0 20px;
+  border: none;
   color: #fff;
   text-align: center;
   cursor: pointer;
-  background-color: #7a7a7a;
+  background-color: #828282;
+  border-radius: 2px;
+  height: 33px;
+  font-size: 18px;
+  font-weight: 500;
+  transition: background-color .1s ease-in-out;
 }
 
 .btn:hover {
-  background-color: #474747;
-  color: #fff;
-}
-
-.btn__squared {
-  border-radius: 3px;
-}
-
-.btn__rounded {
-  border-radius: 20px;
-}
-
-.btn__small {
-  font-size: 1rem;
-  padding: 0.75rem 1.5rem;
-}
-
-.btn__medium {
-  font-size: 1.5rem;
-  padding: 0.75rem 2rem;
-}
-
-.btn__large {
-  font-size: 2rem;
-  padding: 0.75rem 3rem;
+  background-color: #4F4F4F;
 }
 
 .btn--success {
-  background-color: green;
-  color: #fff;
+  background-color: #299778;
 }
 
 .btn--success:hover {
-  background-color: #001a00;
+  background-color: #217057;
 }
 
 .btn--danger {
-  background-color: red;
-  color: #fff;
+  background-color: #972E2C;
 }
 
 .btn--danger:hover {
-  background-color: #990000;
+  background-color: #481615;
+}
+
+.btn--primary {
+  background-color: #1C5E8A;
+}
+
+.btn--primary:hover {
+  background-color: #04273C;
+}
+
+.btn:disabled {
+  cursor: default;
+  background-color: #828282;
+}
+
+.btn:disabled:hover {
+  background-color: #828282;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   padding: 0.75rem;
-  border-bottom: 1px solid #7a7a7a;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   align-items: center;
   margin-bottom: 1rem;
@@ -455,7 +459,6 @@ html {
   display: none;
   position: absolute;
   z-index: 1;
-  border: 1px solid #adadad;
   background-color: #fff;
   right: 0;
   top: 105px;
@@ -491,7 +494,6 @@ html {
   flex-direction: column;
   color: transparent;
   padding: 5px 5px 5px 7px;
-  border: 1px solid #adadad;
   border-radius: 3px;
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -504,10 +506,13 @@ html {
   line-height: 11px;
 }
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 /* tv (> 1440px) */
 @media (min-width: 425px) {
   .container {
-    border: 2px solid #adadad;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
   }
 }

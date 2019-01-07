@@ -2,12 +2,24 @@
 $white: #fff;
 $black: #000;
 
-$grey: rgb(122, 122, 122);
-$grey-light: lighten($grey, 20%);
-$grey-dark: darken($grey, 20%);
+$grey1: #333;
+$grey2: #4F4F4F;
+$grey3: #828282;
+$grey4: #BDBDBD;
+$grey5: #E0E0E0;
+$grey6: #F2F2F2;
 
-$green: rgb(0,128,0);
-$green-dark: darken($green, 20%);
+$darkGreen: #217057;
+$green: #299778;
+$lightGreen: #AEE5D6;
 
-$red: rgb(255,0,0);
-$red-dark: darken($red, 20%);
+$red: #972E2C;
+$salmon: #F38081;
+$darkRed: darken($red, 20%); // not from HelloClick colors
+
+$darkBlue: #04273C;
+$greyBlue: #406680;
+$blue: #1C5E8A;
+$lightBlue: #2A8ACA;
+$paleBlue: #88C8EE;
+$whiteBlue: #C2E8FB;
