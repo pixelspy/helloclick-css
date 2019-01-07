@@ -8,14 +8,14 @@
 	border-radius: 2px;
 	height: 33px;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: $fontWeightMedium;
 	transition: background-color .1s ease-in-out;
 
 	&:hover {
 		background-color: $grey2;
 	}
 
-	// The hovers seems non-consistent
+	// TODO: The hovers seems non-consistent
 	&--success {
 		background-color: $green;
 		&:hover {

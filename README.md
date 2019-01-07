@@ -24,6 +24,8 @@ Style of the framework
 
 #### `/scss/inc/project`
 Style of your project
+##### `/scss/inc/project/ui`
+General style of your project such as colors, fonts, sizes and text.
 ##### `/scss/inc/project/views`
 Put the general style of your project in `_general.scss` and create new files for each pages.
 ###### `/scss/inc/project/views/components`

@@ -365,6 +365,22 @@ html {
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
+.sectionTitle {
+  font-weight: 500;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.sectionSubtitle {
+  font-weight: 500;
+  font-size: 15px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
 .card {
   box-shadow: 0 2px 3px grey;
   padding: 1rem;
